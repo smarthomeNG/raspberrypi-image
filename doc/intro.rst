@@ -183,121 +183,20 @@ SERVICE** or via the **setup\_all** script
 | [ufw]                | Uncomplicated Firewall                                                                             | /etc/ufw/user.rules                                                                              |
 +----------------------+----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
 
-Changelog Release 2.0
----------------------
+Starting with the moving of the Raspberry Pi image from sourceforge to the official
+SmarthomeNG repository, the version numbering changed.
 
--  started from scratch with a new Debian Stretch image and new setup
-   based on `full installation
-   manual <https://github.com/smarthomeNG/smarthome/wiki/Komplettanleitung>`__.
+It now reflects the Raspbian and shng version much better. The first part of the
+version number reflects the Debian version (e.g. 9: stretch, 10: buster). The
+following 2-3 numbers show the SmarthomeNG master version (e.g. 1.5.1, 1.6).
 
-Changelog Release 2.0.1
------------------------
+Examples:
+- 9.1.6: Debian Stretch, shng version 1.6
+- 10.1.6: Debian Buster, shng version 1.6
+- 10.1.6.1: Denian Buster, shng version 1.6.1
+- 10.1.6.0.1: Debian Buster, shng version 1.6, Plugins version 1.6.1
 
--  bunch of minor (mostly cosmetic) tweaks
--  installation of mysql client and server (service disabled by default)
-
-Changelog Release 2.1
----------------------
-
-New:
-
--  Install mqtt broker (mosquitto 1.4.14) and python module
--  Install pydev python package for easier logics remote development
--  Update Script for smarthomeNG and smartVISU2.9 including owner and
-   permission changes
-
-Updated:
-
--  Install SmarthomeNG 1.4
--  Start with new Debian Stretch Lite image from November 2017 and
-   updated packages from Dec 19th 2017
--  Update Kernel to 0.5.70
--  Update smartVISU2.9 to newest version
--  Update knxd to 0.14.19-2
-
-Changed/Fixed:
-
--  Correctly initialize mysqlinit to set up database and smarthome users
--  Change ruamel.yaml version to 0.15.0
--  Uninstall astral and yolk modules, not needed
--  Change Owner of smartVISU to smarthome; change file permissions
-   accordingly to 775
--  Change samba config accordingly
--  Empty user and password for backend plugin
--  Change logcheck cronjob to start 10 minutes later; use ionice for
-   lower workload
--  Change lirc option to listen to IP connections. Now it works with the
-   new lirc plugin.
--  Add sshd and maybe other services to monitrc
-
-Changelog 2.1.1
----------------
-
-New:
-
--  Make an image that doesn't work (yikes!)
-
-Changelog 2.1.2
----------------
-
-New:
-
--  installed telnet (again) to use the command line interface plugin
-   from smarthomeNG
--  Installed newest Percona xtrabackup for mysql database (see service
-   description: [mysql xtrabackup])
--  Installed Python Scripts for automatic MySQL backup
-
-Updated:
-
--  Updated system including smartvisu 2.9
--  Installed SmarthomeNG 1.4.1 (core and plugins)
--  squeezelite 18.7.1052 update
--  `Raspbian "stretch
-   lite" <https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2018-03-14/2018-03-13-raspbian-stretch-lite.zip>`__
-   from March 2018
-
-Changed/Fixed:
-
--  Fixed problems with release 2.1.1 which wasn't bootable
--  Deleted the empty last line from /etc/lirc/lirc\_options.conf to use
-   lirc
--  changed default log of mosquitto service to
-   /var/log/mosquitto/mosquitto.log
--  Deleted useless old modules folders
--  Created symlink to mysql config in /etc/mysql/conf.d to successfully
-   run xtrabackup
--  Backup for mysql is running automatically every hour. Disable by
-   changing fily mysql\_backup in /etc/cron.hourly
--  small tweaks
-
-Changelog 2.2
--------------
-
-New:
-
--  nginx instead of Apache as webserver (and reverse proxy)
--  system\_update script to update packages and SmarthomeNG, SmartVISU
--  setup\_all Script to easily configure and setup services like
-   openvpn, reverse proxy, etc.
--  Ansible, including playbooks to install influxdb, grafana or
-   homebridge (Raspi 3 only)
--  Uncomplicated Firewall
-
-Updated:
-
--  Updated system and python modules
--  Updated several packages and executables
--  Installed SmarthomeNG 1.5.1 (core and plugins)
--  `Raspbian "stretch
-   lite" <https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2018-06-29/2018-06-27-raspbian-stretch-lite.zip>`__
-   from June 2018
-
-Changed/Fixed:
-
--  small tweaks
-
-Changelog 2.3
+Changelog 9.1.6
 -------------
 
 New:
@@ -326,5 +225,3 @@ Updated:
 Changed/Fixed:
 
 -  small tweaks
-
-[[members limit=20]][[download\_button]]
