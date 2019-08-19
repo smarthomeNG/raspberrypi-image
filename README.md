@@ -8,5 +8,4 @@ The documentation can currently be found here: https://sourceforge.net/p/smartho
 
 The versioning of the image has changed:  
 first digit: Debian version  
-three digits: smarthomeng version  
-last digit: plugins version if applicable  
+three digits: smarthomeng version (including plugins version if applicable)
