@@ -193,9 +193,11 @@ version number reflects the Debian version (e.g. 9: stretch, 10: buster). The
 following 2-3 numbers show the SmarthomeNG master version (e.g. 1.5.1, 1.6).
 
 Examples:
+
 - 9.1.6: Debian Stretch, shng version 1.6
 - 10.1.6: Debian Buster, shng version 1.6
 - 10.1.6.1: Debian Buster, shng version 1.6.1
+
 
 Changelog 10.1.6
 ----------------
