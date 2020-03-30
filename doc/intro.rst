@@ -132,6 +132,8 @@ configuration files based on your preferences.
 +---------------------------+-----------------------------------+-------------------------------------------------------------+
 | Service                   | Description                       | Config File(s)                                              |
 +===========================+===================================+=============================================================+
+| timesyncd                 | Automatic time synchronisation    |                                                             |
++---------------------------+-----------------------------------+-------------------------------------------------------------+
 | [knxd]                    | KNX Bus Connection                | /etc/knxd.ini or /etc/knxd.conf                             |
 +---------------------------+-----------------------------------+-------------------------------------------------------------+
 | [ssh]                     | Console access via Port 22        | /etc/ssh/sshd\_config                                       |
@@ -193,11 +195,19 @@ following 2-3 numbers show the SmarthomeNG master version (e.g. 1.5.1, 1.6).
 Examples:
 - 9.1.6: Debian Stretch, shng version 1.6
 - 10.1.6: Debian Buster, shng version 1.6
-- 10.1.6.1: Denian Buster, shng version 1.6.1
-- 10.1.6.0.1: Debian Buster, shng version 1.6, Plugins version 1.6.1
+- 10.1.6.1: Debian Buster, shng version 1.6.1
+
+Changelog 10.1.6
+----------------
+New:
+possibility to install node-red via setup_nodered.sh
+
+Updated:
+`Raspbian "Buster
+   lite" <https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-09-30/2019-09-26-raspbian-buster-lite.zip>`__
 
 Changelog 9.1.6
--------------
+---------------
 
 New:
 
