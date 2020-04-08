@@ -1,0 +1,26 @@
+# [mysql backup](https://mariadb.com/kb/en/mariabackup-overview/)
+
+Purpose
+--
+Automatic, incremential backup of your MySQL database while the DB is running. It's using low ressources while backing up.
+
+Configuration
+--
+[pyxtrabackup script](https://github.com/deviantony/xtrabackup-scripts) is configured to run every hour. 
+Backups are stored in */var/backups/mysql*
+
+Change automatic behaviour and destination directory accordingly in file */etc/cron.hourly/mysql_backup*
+
+Restore backups
+--
+**pyxtrabackup-restore --base-archive=<PATH TO BASE BACKUP INCL. FILE AND EXTENSION> --incremental-archive=<PATH TO INCREMENTAL BACKUP INCL. FILE AND EXTENSION> --user=root --uncompressed-archives**
+
+In image version >= 2.2 you can run the following command to restore incremental backups easily:
+**mysql_restore /var/backups/mysql/<DATE>/INC/<NEWEST INCREMENTAL FILENAME>.tar**
+
+Diskspace Management
+--
+Every day a new backupfolder is created in */var/backups/mysql* with the corresponding directory name based on the current date. Depending on your SD card/USB stick and database size you might run into problems concerning free disk space. Beginning with image v 2.2 the cron script deletes all backups except the newset 5 ones. Change accordingly in */etc/cron.hourly/mysqlbackup* or fix issues in one of these ways:
+
+* Change backup folder to a mounted network drive (with nfs or samba). You can also create symlinks to */var/backup/mysql* from those drives for your convenience.
+* Compress backups by removing the "no-compress" flag in the cron script. Be aware that this increases CPU load significantly for several minutes.
