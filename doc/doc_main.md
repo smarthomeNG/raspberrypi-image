@@ -101,7 +101,7 @@ systemd-timesyncd | Automatic timesync |-
 [ssh](https://github.com/smarthomeNG/raspberrypi-image/blob/master/doc/doc_ssh.md) | Console access via Port 22 | /etc/ssh/sshd_config
 [rsyslog](https://github.com/smarthomeNG/raspberrypi-image/blob/master/doc/doc_rsyslog.md) | System Logging | /etc/rsyslog.conf
 [Samba](https://github.com/smarthomeNG/raspberrypi-image/blob/master/doc/doc_samba.md) | Access your files from anywhere | /etc/samba/smb.conf
-[apache2]()https://github.com/smarthomeNG/raspberrypi-image/blob/master/doc/doc_apache2.md (Image < 2.2) | Webserver | /etc/apache2/apache2.conf 
+[apache2](https://github.com/smarthomeNG/raspberrypi-image/blob/master/doc/doc_apache2.md) (Image < 2.2) | Webserver | /etc/apache2/apache2.conf 
 [nginx](https://github.com/smarthomeNG/raspberrypi-image/blob/master/doc/doc_nginx.md)  (Image >= 2.2)| Webserver | /etc/nginx/nginx.conf, /etc/nginx/sites-available/default
 
 The following services are installed but have to be activated and started with **sudo systemctl enable SERVICE && sudo systemctl start SERVICE** or via the **setup_all** script
