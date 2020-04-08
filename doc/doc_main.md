@@ -97,7 +97,7 @@ The following services are installed and running. You might update their configu
 Service | Description | Config File(s)
 ---|---|---
 systemd-timesyncd | Automatic timesync |-
-[knxd] | KNX Bus Connection | /etc/knxd.ini or /etc/knxd.conf
+[knxd](https://github.com/smarthomeNG/raspberrypi-image/blob/master/doc/doc_knxd.md) | KNX Bus Connection | /etc/knxd.ini or /etc/knxd.conf
 [ssh] | Console access via Port 22 | /etc/ssh/sshd_config
 [rsyslog] | System Logging | /etc/rsyslog.conf
 [Samba] | Access your files from anywhere | /etc/samba/smb.conf
