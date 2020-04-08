@@ -98,11 +98,11 @@ Service | Description | Config File(s)
 ---|---|---
 systemd-timesyncd | Automatic timesync |-
 [knxd](https://github.com/smarthomeNG/raspberrypi-image/blob/master/doc/doc_knxd.md) | KNX Bus Connection | /etc/knxd.ini or /etc/knxd.conf
-[ssh](https://github.com/smarthomeNG/raspberrypi-image/blob/master/doc/doc_sshd.md) | Console access via Port 22 | /etc/ssh/sshd_config
+[ssh](https://github.com/smarthomeNG/raspberrypi-image/blob/master/doc/doc_ssh.md) | Console access via Port 22 | /etc/ssh/sshd_config
 [rsyslog](https://github.com/smarthomeNG/raspberrypi-image/blob/master/doc/doc_rsyslog.md) | System Logging | /etc/rsyslog.conf
-[Samba] | Access your files from anywhere | /etc/samba/smb.conf
-[apache2] (Image < 2.2) | Webserver | /etc/apache2/apache2.conf 
-[nginx]  (Image >= 2.2)| Webserver | /etc/nginx/nginx.conf, /etc/nginx/sites-available/default
+[Samba](https://github.com/smarthomeNG/raspberrypi-image/blob/master/doc/doc_samba.md) | Access your files from anywhere | /etc/samba/smb.conf
+[apache2]()https://github.com/smarthomeNG/raspberrypi-image/blob/master/doc/doc_apache2.md (Image < 2.2) | Webserver | /etc/apache2/apache2.conf 
+[nginx](https://github.com/smarthomeNG/raspberrypi-image/blob/master/doc/doc_nginx.md)  (Image >= 2.2)| Webserver | /etc/nginx/nginx.conf, /etc/nginx/sites-available/default
 
 The following services are installed but have to be activated and started with **sudo systemctl enable SERVICE && sudo systemctl start SERVICE** or via the **setup_all** script
 
