@@ -10,6 +10,6 @@ The documentation can be found here: https://github.com/smarthomeNG/raspberrypi-
 
 The format now is the following: \<debian major>.\<shng major>.\<shng minor>.\<shng revision>
 
-first digit(s): Debian version  
+first digit(s): Debian major-version  
 following numbers: SmartHomeNG/plugins version
 
