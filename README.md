@@ -11,8 +11,8 @@ The documentation can be found here: https://github.com/smarthomeNG/raspberrypi-
 
 ## Versioning of the image
 
-The format now is the following: \<debian major>.\<shng major>.\<shng minor>.\<shng revision>
+The format now is the following: **\<debian major>.\<shng major>.\<shng minor>.\<shng revision>**
 
-first digit(s): Debian major-version  
-following numbers: SmartHomeNG/plugins version
+- first digit(s): Debian major-version  
+- following numbers: SmartHomeNG/plugins version
 
