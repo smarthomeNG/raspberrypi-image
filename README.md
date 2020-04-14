@@ -2,7 +2,7 @@
 
 
 ## Images for the Raspberry Pi
-This Repository contains Images for SmartHomeNG v1.6 and up.
+This Repository contains Images starting with SmartHomeNG v1.6 and up to the actual Release of SmartHomeNG.
 
 You find the images here: https://github.com/smarthomeNG/raspberrypi-image/releases
 
