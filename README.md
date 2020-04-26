@@ -1,3 +1,8 @@
+![Github Tag](https://img.shields.io/github/v/release/smarthomeng/raspberrypi-image?sort=semver)
+![Github Tag](https://img.shields.io/github/downloads/smarthomeng/raspberrypi-image/10.1.7.1/total.svg)
+[![Join the chat at https://gitter.im/smarthomeNG/smarthome](https://badges.gitter.im/smarthomeNG/smarthome.svg)](https://gitter.im/smarthomeNG/smarthome?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+
 # SmartHomeNG, smartVISU and other Tools <br/>packaged as an image for the Raspberry Pi
 
 
